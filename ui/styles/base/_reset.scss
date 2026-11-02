@@ -1,0 +1,137 @@
+@use "../abstracts/variables" as vars;
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    outline: 0;
+
+    &:focus-visible {
+        outline: 1px solid #111;
+        outline-offset: 2px;
+        border-radius: 0.2rem;
+    }
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+:root {
+    -webkit-tap-highlight-color: transparent;
+    cursor: default;
+}
+
+html,
+body {
+    height: 100%;
+    overscroll-behavior: none;
+    overflow-anchor: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &[href="#none"] {
+        cursor: auto;
+    }
+}
+
+button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    background: none;
+    border: 0;
+}
+
+input,
+textarea {
+    appearance: none;
+    vertical-align: middle;
+    &:focus-visible {
+        outline: 0;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    &:focus-visible {
+        outline: 1px solid #111;
+        outline-offset: 2px;
+        border-radius: 0.2rem;
+    }
+}
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+    -webkit-text-fill-color: #000;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 10px;
+
+    @media (max-width: (vars.$breakpoint-mobile - 1px)) {
+        font-size: 9px;
+    }
+}
+
+body {
+    font-family: vars.$font-sans;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625;
+    letter-spacing: 0;
+    background: var(--color-canvas);
+    color: var(--color-foreground);
+}
+
+[hidden] {
+    display: none;
+}

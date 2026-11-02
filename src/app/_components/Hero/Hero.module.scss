@@ -1,0 +1,75 @@
+.hero {
+    padding: 6rem 0 5rem;
+
+    @include mix.respond-to("pc") {
+        padding: 10rem 0 8rem;
+    }
+}
+
+.inner {
+    @include mix.inner;
+}
+
+.eyebrow {
+    @include mix.badge;
+    margin-bottom: 2rem;
+}
+
+.title {
+    @include mix.h1;
+    color: var(--color-foreground);
+    max-width: 56rem;
+}
+
+.title__accent {
+    color: var(--color-primary);
+}
+
+.lead {
+    @include mix.body-text;
+    margin-top: 2rem;
+    max-width: 52rem;
+    color: var(--color-body);
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.6rem;
+    margin-top: 2.4rem;
+}
+
+.meta__item {
+    @include mix.body-small;
+    color: var(--color-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    &::before {
+        content: "";
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background: var(--color-gray-400);
+    }
+
+    &:first-child::before {
+        display: none;
+    }
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 3.2rem;
+}
+
+.button--primary {
+    @include mix.button-primary;
+}
+
+.button--weak {
+    @include mix.button-weak;
+}

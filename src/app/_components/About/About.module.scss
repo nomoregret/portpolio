@@ -1,0 +1,63 @@
+.section {
+    padding: 5rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.inner {
+    @include mix.inner;
+}
+
+.heading {
+    @include mix.h3;
+    color: var(--color-foreground);
+}
+
+.grid {
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 3.2rem;
+
+    @include mix.respond-to("tablet") {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+    }
+}
+
+.card {
+    padding: 2.4rem;
+    background: var(--color-surface);
+    border-radius: mix.radius("md");
+}
+
+.card__title {
+    @include mix.body-text;
+    font-weight: 700;
+    color: var(--color-foreground);
+}
+
+.card__desc {
+    @include mix.body-small;
+    margin-top: 0.8rem;
+    color: var(--color-body);
+}
+
+.skills {
+    margin-top: 4rem;
+}
+
+.skills__label {
+    @include mix.body-small;
+    font-weight: 600;
+    color: var(--color-muted);
+    margin-bottom: 1.2rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill {
+    @include mix.badge;
+}

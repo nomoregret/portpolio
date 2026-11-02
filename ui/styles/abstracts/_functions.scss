@@ -1,0 +1,3 @@
+@function percent($current, $container) {
+    @return calc($current / $container) * 100%;
+}

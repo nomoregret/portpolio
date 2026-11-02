@@ -1,0 +1,46 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--color-canvas) 88%, transparent);
+    backdrop-filter: blur(0.8rem);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+    @include mix.inner;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+
+    @include mix.respond-to("pc") {
+        height: 7.2rem;
+    }
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--color-foreground);
+}
+
+.nav {
+    display: none;
+
+    @include mix.respond-to("tablet") {
+        display: flex;
+        align-items: center;
+        gap: 2.8rem;
+    }
+}
+
+.nav__link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-body);
+
+    &:hover {
+        color: var(--color-primary);
+    }
+}

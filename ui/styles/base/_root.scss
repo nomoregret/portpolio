@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as vars;
+
+// 컬러 토큰을 CSS 커스텀 프로퍼티로 노출한다. globals.scss에서만 로드한다.
+:root {
+    @each $name, $value in vars.$colors {
+        --color-#{$name}: #{$value};
+    }
+}

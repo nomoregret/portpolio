@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as mix;
+
+.u-mo-only {
+    @include mix.mo-only;
+}
+
+.u-pc-only {
+    @include mix.pc-only;
+}
+
+.u-a11y-hidden {
+    @include mix.a11y-hidden;
+}
+
+.inner {
+    @include mix.inner;
+}
+
+.u-color-primary {
+    color: var(--color-primary);
+}
+
+.u-bold {
+    font-weight: 600;
+}

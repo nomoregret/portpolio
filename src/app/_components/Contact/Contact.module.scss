@@ -1,0 +1,47 @@
+.section {
+    padding: 6rem 0 8rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.inner {
+    @include mix.inner;
+    text-align: center;
+}
+
+.heading {
+    @include mix.h3;
+    color: var(--color-foreground);
+}
+
+.desc {
+    @include mix.body-text;
+    color: var(--color-body);
+    margin-top: 1.2rem;
+}
+
+.list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 3.2rem;
+    text-align: left;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.item__label {
+    @include mix.body-small;
+    font-weight: 700;
+    color: var(--color-muted);
+    width: 6rem;
+    flex-shrink: 0;
+}
+
+.item__value {
+    @include mix.body-text;
+    color: var(--color-foreground);
+}

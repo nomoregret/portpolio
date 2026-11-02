@@ -1,0 +1,62 @@
+// mobile first: 기본 스타일은 모바일 기준, PC는 아래 breakpoint부터 min-width로 확장
+$breakpoint-pc: 1440px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 390px;
+
+// Design system: Toss (TDS Mobile / toss.im) — doc/DESIGN.md 참고
+$colors: (
+    "canvas": #ffffff,
+    "foreground": #191f28,
+    "body": #4e5968,
+    "muted": #8b95a1,
+    "surface": #f2f4f6,
+    "border": #e5e8eb,
+    "on-primary": #ffffff,
+    "primary": #3182f6,
+    "primary-hover": #2272eb,
+    "weak-bg": #e8f3ff,
+    "weak-fg": #1b64da,
+    "danger": #e42939,
+    "gray-50": #f9fafb,
+    "gray-100": #f2f4f6,
+    "gray-200": #e5e8eb,
+    "gray-300": #d1d6db,
+    "gray-400": #b0b8c1,
+    "gray-500": #8b95a1,
+    "gray-600": #6b7684,
+    "gray-700": #4e5968,
+    "gray-800": #333d4b,
+    "gray-900": #191f28,
+    "blue-50": #e8f3ff,
+    "blue-600": #2272eb,
+    "blue-700": #1b64da,
+);
+
+// Toss 문서 기준 spacing/radius 클러스터
+$spacing: (
+    "xs": 0.4rem,
+    "sm": 0.6rem,
+    "md": 0.8rem,
+    "lg": 1.6rem,
+    "xl": 2.4rem,
+    "xxl": 3.2rem,
+);
+
+$radius: (
+    "sm": 0.4rem,
+    "md": 0.6rem,
+    "button-sm": 0.8rem,
+    "button-md": 1rem,
+    "button-lg": 1.4rem,
+    "button-xl": 1.6rem,
+);
+
+// font-family stacks — Toss Product Sans는 재배포 불가, DESIGN.md가 지정한 substitute 체인 사용
+$font-sans:
+    var(--font-ibm-plex-sans),
+    "Pretendard Variable",
+    "Noto Sans KR",
+    "Noto Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;

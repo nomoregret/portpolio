@@ -1,0 +1,135 @@
+.section {
+    padding: 5rem 0;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.inner {
+    @include mix.inner;
+}
+
+.heading {
+    @include mix.h3;
+    color: var(--color-foreground);
+}
+
+.subheading {
+    @include mix.body-small;
+    color: var(--color-muted);
+    margin-top: 0.8rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+.card {
+    background: var(--color-canvas);
+    border: 1px solid var(--color-border);
+    border-radius: mix.radius("md");
+    padding: 2.4rem;
+
+    @include mix.respond-to("tablet") {
+        padding: 3.2rem;
+    }
+}
+
+.card__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.card__title {
+    @include mix.h4;
+    color: var(--color-foreground);
+}
+
+.card__period {
+    @include mix.body-small;
+    color: var(--color-muted);
+    white-space: nowrap;
+}
+
+.card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.badge {
+    @include mix.badge;
+}
+
+.badge--neutral {
+    @include mix.badge;
+    background: var(--color-gray-100);
+    color: var(--color-gray-700);
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.6rem;
+}
+
+.tech__item {
+    @include mix.body-small;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: mix.radius("sm");
+    color: var(--color-body);
+}
+
+.block {
+    margin-top: 2rem;
+}
+
+.block__label {
+    @include mix.body-small;
+    font-weight: 700;
+    color: var(--color-foreground);
+}
+
+.block__list {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.block__item {
+    @include mix.body-small;
+    color: var(--color-body);
+    padding-left: 1.2rem;
+    position: relative;
+
+    &::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: var(--color-muted);
+    }
+}
+
+.link {
+    @include mix.body-small;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 2rem;
+    color: var(--color-weak-fg);
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
