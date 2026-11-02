@@ -9,7 +9,7 @@
 }
 
 .heading {
-    @include mix.h3;
+    @include mix.feature-text;
     color: var(--color-foreground);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .item__label {
-    @include mix.body-small;
+    @include mix.ui-text;
     font-weight: 700;
     color: var(--color-muted);
     width: 6rem;

@@ -1,6 +1,6 @@
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--color-gray-400) transparent;
+    scrollbar-color: var(--color-border) transparent;
 }
 
 ::-webkit-scrollbar {
@@ -15,11 +15,11 @@
 ::-webkit-scrollbar-thumb {
     border: 2px solid transparent;
     border-radius: 8px;
-    background-color: var(--color-gray-400);
+    background-color: var(--color-border);
     background-clip: padding-box;
 
     &:hover {
-        background-color: var(--color-gray-500);
+        background-color: var(--color-muted);
     }
 }
 

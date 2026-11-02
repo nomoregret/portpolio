@@ -8,12 +8,12 @@
 }
 
 .heading {
-    @include mix.h3;
+    @include mix.feature-text;
     color: var(--color-foreground);
 }
 
 .subheading {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
     margin-top: 0.8rem;
 }
@@ -23,8 +23,8 @@
 }
 
 .group__year {
-    @include mix.body-small;
-    font-weight: 700;
+    @include mix.mono-text;
+    font-weight: 600;
     color: var(--color-primary);
     display: flex;
     align-items: center;
@@ -68,12 +68,12 @@
 }
 
 .row__sub {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
 }
 
 .row__period {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
     white-space: nowrap;
 }

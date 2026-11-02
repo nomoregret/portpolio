@@ -3,60 +3,36 @@ $breakpoint-pc: 1440px;
 $breakpoint-tablet: 1024px;
 $breakpoint-mobile: 390px;
 
-// Design system: Toss (TDS Mobile / toss.im) — doc/DESIGN.md 참고
+// Design system: Vercel (Geist) 타이포/간격/radius + Linear풍 다크 팔레트·포인트 컬러를 얹은 확장
+// (다크 배색·accent 값은 공식 소스에서 가져온 게 아니라 Linear의 분위기만 참고한 추정치)
 $colors: (
-    "canvas": #ffffff,
-    "foreground": #191f28,
-    "body": #4e5968,
-    "muted": #8b95a1,
-    "surface": #f2f4f6,
-    "border": #e5e8eb,
+    "canvas": #08090a,
+    "foreground": #f7f8f8,
+    "body": #9b9ea4,
+    "muted": #6f7177,
+    "border": #232428,
+    "surface": #131416,
+    "primary": #5e6ad2,
+    "primary-hover": #6f79e0,
     "on-primary": #ffffff,
-    "primary": #3182f6,
-    "primary-hover": #2272eb,
-    "weak-bg": #e8f3ff,
-    "weak-fg": #1b64da,
-    "danger": #e42939,
-    "gray-50": #f9fafb,
-    "gray-100": #f2f4f6,
-    "gray-200": #e5e8eb,
-    "gray-300": #d1d6db,
-    "gray-400": #b0b8c1,
-    "gray-500": #8b95a1,
-    "gray-600": #6b7684,
-    "gray-700": #4e5968,
-    "gray-800": #333d4b,
-    "gray-900": #191f28,
-    "blue-50": #e8f3ff,
-    "blue-600": #2272eb,
-    "blue-700": #1b64da,
 );
 
-// Toss 문서 기준 spacing/radius 클러스터
+// doc/DESIGN.md spacing 토큰 (px → rem, 10px 베이스)
 $spacing: (
     "xs": 0.4rem,
-    "sm": 0.6rem,
-    "md": 0.8rem,
-    "lg": 1.6rem,
-    "xl": 2.4rem,
-    "xxl": 3.2rem,
+    "sm": 0.8rem,
+    "md": 1.2rem,
+    "lg": 2.4rem,
+    "xl": 3.2rem,
 );
 
+// doc/DESIGN.md rounded 토큰
 $radius: (
-    "sm": 0.4rem,
-    "md": 0.6rem,
-    "button-sm": 0.8rem,
-    "button-md": 1rem,
-    "button-lg": 1.4rem,
-    "button-xl": 1.6rem,
+    "compact": 0.4rem,
+    "control": 0.6rem,
+    "full": 9999px,
 );
 
-// font-family stacks — Toss Product Sans는 재배포 불가, DESIGN.md가 지정한 substitute 체인 사용
-$font-sans:
-    var(--font-ibm-plex-sans),
-    "Pretendard Variable",
-    "Noto Sans KR",
-    "Noto Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+// Geist / Geist Mono — Vercel이 OFL로 공식 배포, `geist` 패키지로 로드
+$font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
+$font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;

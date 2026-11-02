@@ -3,6 +3,7 @@ import styles from "./Hero.module.scss";
 export default function Hero() {
   return (
     <section id="top" className={styles.hero}>
+      <div className={styles.glow} aria-hidden="true" />
       <div className={styles.inner}>
         <p className={styles.eyebrow}>퍼블리싱 PL · 13년차</p>
         <h1 className={styles.title}>
@@ -25,7 +26,7 @@ export default function Hero() {
           <a href="#projects" className={styles["button--primary"]}>
             대표 프로젝트 보기
           </a>
-          <a href="#career" className={styles["button--weak"]}>
+          <a href="#career" className={styles["button--secondary"]}>
             전체 경력 보기
           </a>
         </div>

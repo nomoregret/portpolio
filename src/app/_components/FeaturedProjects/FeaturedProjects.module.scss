@@ -1,7 +1,6 @@
 .section {
     padding: 5rem 0;
     border-top: 1px solid var(--color-border);
-    background: var(--color-surface);
 }
 
 .inner {
@@ -9,12 +8,12 @@
 }
 
 .heading {
-    @include mix.h3;
+    @include mix.feature-text;
     color: var(--color-foreground);
 }
 
 .subheading {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
     margin-top: 0.8rem;
 }
@@ -27,9 +26,10 @@
 }
 
 .card {
-    background: var(--color-canvas);
+    @include mix.hover-lift;
+    background: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: mix.radius("md");
+    border-radius: mix.radius("control");
     padding: 2.4rem;
 
     @include mix.respond-to("tablet") {
@@ -46,12 +46,12 @@
 }
 
 .card__title {
-    @include mix.h4;
+    @include mix.card-title;
     color: var(--color-foreground);
 }
 
 .card__period {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
     white-space: nowrap;
 }
@@ -63,14 +63,23 @@
     margin-top: 1rem;
 }
 
+// 역할 뱃지 — 채움으로 강조
 .badge {
-    @include mix.badge;
+    display: inline-flex;
+    align-items: center;
+    height: 2.4rem;
+    padding: 0 1rem;
+    border-radius: mix.radius("full");
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    font-size: 1.3rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
+// 메타 정보 뱃지 — 공식 Geist badge와 동일한 중립 톤
 .badge--neutral {
     @include mix.badge;
-    background: var(--color-gray-100);
-    color: var(--color-gray-700);
 }
 
 .tech {
@@ -81,11 +90,11 @@
 }
 
 .tech__item {
-    @include mix.body-small;
+    @include mix.mono-text;
     font-size: 1.2rem;
     padding: 0.3rem 0.8rem;
     border: 1px solid var(--color-border);
-    border-radius: mix.radius("sm");
+    border-radius: mix.radius("compact");
     color: var(--color-body);
 }
 
@@ -94,7 +103,7 @@
 }
 
 .block__label {
-    @include mix.body-small;
+    @include mix.ui-text;
     font-weight: 700;
     color: var(--color-foreground);
 }
@@ -107,7 +116,7 @@
 }
 
 .block__item {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-body);
     padding-left: 1.2rem;
     position: relative;
@@ -121,15 +130,19 @@
 }
 
 .link {
-    @include mix.body-small;
+    @include mix.ui-text;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     margin-top: 2rem;
-    color: var(--color-weak-fg);
+    color: var(--color-foreground);
     font-weight: 600;
+    border-bottom: 1px solid var(--color-border);
+    width: fit-content;
+    transition: color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-        text-decoration: underline;
+        color: var(--color-primary);
+        border-color: var(--color-primary);
     }
 }

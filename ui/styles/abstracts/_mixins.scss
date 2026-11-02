@@ -71,53 +71,61 @@
     @return map.get(vars.$radius, $key);
 }
 
-// Toss TDS 문서 기준 타이포그래피 스케일 (doc/DESIGN.md)
-@mixin h1 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    line-height: 5.4rem;
-    letter-spacing: -0.02em;
+// Vercel(Geist) 문서 기준 타이포그래피 스케일 (doc/DESIGN.md)
+@mixin hero-text {
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.384rem;
 }
-@mixin h2 {
+@mixin section-text {
+    font-size: 5.6rem;
+    font-weight: 450;
+    line-height: 1;
+    letter-spacing: -0.336rem;
+}
+@mixin feature-text {
     font-size: 3rem;
-    font-weight: 600;
-    line-height: 4.5rem;
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.15rem;
 }
-@mixin h3 {
+@mixin card-title {
     font-size: 2.4rem;
     font-weight: 600;
-    line-height: 3.6rem;
-    letter-spacing: -0.01em;
-}
-@mixin h4 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 3.3rem;
+    line-height: 1.33;
+    letter-spacing: -0.096rem;
 }
 @mixin body-text {
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.4rem;
+    line-height: 1.5;
 }
-@mixin body-small {
+@mixin ui-text {
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2.1rem;
+    line-height: 1.43;
+}
+@mixin mono-text {
+    font-family: vars.$font-mono;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
 }
 
-// TDS xlarge 버튼 지오메트리를 웹 스케일(40~46px류)로 절충한 primary 버튼
+// Geist 문서에 실린 compact 컨트롤(32~36px, 4~6px radius)과 동일한 지오메트리.
+// 필드(primary 채움)는 secondary action을 참고해 확장한 값.
 @mixin button-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 4.6rem;
-    padding: 0 2rem;
-    border-radius: radius("button-lg");
+    height: 3.6rem;
+    padding: 0 1.6rem;
+    border-radius: radius("control");
     background: var(--color-primary);
     color: var(--color-on-primary);
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 500;
     transition: background-color 0.15s ease, transform 0.1s ease;
 
     &:hover {
@@ -127,42 +135,78 @@
         transform: scale(0.96);
     }
     &:focus-visible {
-        outline: none;
-        box-shadow:
-            0 0 0 1px #8ac0ff,
-            0 0 0 3px #b8d9ff;
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
     }
 }
 
-// toss.im weak marketing CTA
-@mixin button-weak {
+// 공식 Geist secondary action 예시 그대로: 흰 배경 + #ebebeb 링 보더 (다크 테마에서는 surface + border)
+@mixin button-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 4rem;
-    padding: 1.1rem 1.6rem;
-    border-radius: 0.7rem;
-    background: var(--color-weak-bg);
-    color: var(--color-weak-fg);
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: opacity 0.15s ease;
+    height: 3.6rem;
+    padding: 0 1rem;
+    border-radius: radius("control");
+    background: var(--color-surface);
+    color: var(--color-foreground);
+    box-shadow: 0 0 0 1px var(--color-border);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
 
     &:hover {
-        opacity: 0.85;
+        box-shadow: 0 0 0 1px var(--color-muted);
+    }
+    &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
     }
 }
 
-// TDS weak badge
+// CSS Modules는 animation 속성의 키프레임 이름을 파일 단위로 해시하기 때문에,
+// @keyframes 정의도 사용하는 모듈 파일 안에 함께 있어야 이름이 맞물린다.
+// 이 mixin을 쓰는 모듈의 최상단에서 fade-in-up-keyframes를 한 번 호출할 것.
+@mixin fade-in-up-keyframes {
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(1.2rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+// 로드 시 등장하는 서브틀한 fade-up. prefers-reduced-motion은 _motion.scss에서 전역 차단.
+@mixin fade-in-up($delay: 0s) {
+    animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: $delay;
+}
+
+// 카드류 hover 시 살짝 떠오르며 accent 톤 보더로 전환 (Linear 스타일 서브틀 인터랙션)
+@mixin hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 1px var(--color-primary);
+    }
+}
+
+// Geist 컴포넌트 로스터의 Badge — geometry는 미실측이라 중립 톤 + full radius로 절충
 @mixin badge {
     display: inline-flex;
     align-items: center;
     height: 2.4rem;
-    padding: 0 0.8rem;
-    border-radius: radius("sm");
-    background: var(--color-weak-bg);
-    color: var(--color-weak-fg);
+    padding: 0 1rem;
+    border-radius: radius("full");
+    background: var(--color-surface);
+    color: var(--color-body);
+    box-shadow: 0 0 0 1px var(--color-border);
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
 }

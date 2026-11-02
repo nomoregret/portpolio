@@ -1,38 +1,78 @@
+@include mix.fade-in-up-keyframes;
+
 .hero {
+    position: relative;
     padding: 6rem 0 5rem;
+    overflow: hidden;
 
     @include mix.respond-to("pc") {
         padding: 10rem 0 8rem;
     }
 }
 
+// Linear풍 앰비언트 글로우 — accent 톤 블러, 장식용이라 콘텐츠보다 뒤에, 인터랙션 대상 아님
+.glow {
+    position: absolute;
+    top: -20rem;
+    left: 50%;
+    width: 80rem;
+    height: 60rem;
+    transform: translateX(-50%);
+    background: radial-gradient(closest-side, var(--color-primary), transparent 70%);
+    opacity: 0.16;
+    filter: blur(6rem);
+    pointer-events: none;
+    z-index: 0;
+}
+
 .inner {
     @include mix.inner;
+    position: relative;
+    z-index: 1;
 }
 
 .eyebrow {
     @include mix.badge;
+    @include mix.fade-in-up(0s);
     margin-bottom: 2rem;
 }
 
 .title {
-    @include mix.h1;
+    // doc/DESIGN.md hero(64px/-3.84px)는 PC부터 그대로 적용, 모바일은 비율을 유지해 축소
+    @include mix.fade-in-up(0.08s);
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 4rem;
+    letter-spacing: -0.24rem;
     color: var(--color-foreground);
     max-width: 56rem;
+
+    @include mix.respond-to("tablet") {
+        font-size: 5.2rem;
+        letter-spacing: -0.312rem;
+    }
+
+    @include mix.respond-to("pc") {
+        @include mix.hero-text;
+        max-width: 64rem;
+    }
 }
 
 .title__accent {
     color: var(--color-primary);
+    font-weight: 600;
 }
 
 .lead {
     @include mix.body-text;
+    @include mix.fade-in-up(0.16s);
     margin-top: 2rem;
     max-width: 52rem;
     color: var(--color-body);
 }
 
 .meta {
+    @include mix.fade-in-up(0.22s);
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem 1.6rem;
@@ -40,7 +80,7 @@
 }
 
 .meta__item {
-    @include mix.body-small;
+    @include mix.ui-text;
     color: var(--color-muted);
     display: flex;
     align-items: center;
@@ -51,7 +91,7 @@
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 50%;
-        background: var(--color-gray-400);
+        background: var(--color-border);
     }
 
     &:first-child::before {
@@ -60,6 +100,7 @@
 }
 
 .actions {
+    @include mix.fade-in-up(0.28s);
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
@@ -70,6 +111,6 @@
     @include mix.button-primary;
 }
 
-.button--weak {
-    @include mix.button-weak;
+.button--secondary {
+    @include mix.button-secondary;
 }
