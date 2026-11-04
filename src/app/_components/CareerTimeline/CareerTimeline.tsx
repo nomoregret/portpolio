@@ -20,14 +20,16 @@ function groupByYear(projects: TimelineProject[]) {
 
 export default function CareerTimeline() {
   const groups = groupByYear(timeline);
+  const companyCount = new Set(timeline.map((project) => project.company)).size;
+  const startYear = timeline[timeline.length - 1]?.period.slice(0, 4);
 
   return (
     <section id="career" className={styles.section}>
       <div className={styles.inner}>
         <h2 className={styles.heading}>전체 경력</h2>
         <p className={styles.subheading}>
-          2013년부터 지금까지, 5개 회사에서 진행한 {timeline.length}개
-          프로젝트입니다.
+          {startYear}년부터 지금까지, {companyCount}개 회사에서 진행한{" "}
+          {timeline.length}개 프로젝트입니다.
         </p>
 
         {groups.map((group) => (

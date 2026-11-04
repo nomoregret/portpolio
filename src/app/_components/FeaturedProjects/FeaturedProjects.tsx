@@ -1,4 +1,4 @@
-import { featuredProjects } from "@/data/career";
+import { featuredProjects, timeline } from "@/data/career";
 import styles from "./FeaturedProjects.module.scss";
 
 export default function FeaturedProjects() {
@@ -7,7 +7,8 @@ export default function FeaturedProjects() {
       <div className={styles.inner}>
         <h2 className={styles.heading}>대표 프로젝트</h2>
         <p className={styles.subheading}>
-          34개 프로젝트 중 역할과 맥락이 잘 드러나는 4개를 골랐습니다.
+          {timeline.length}개 프로젝트 중 역할과 맥락이 잘 드러나는{" "}
+          {featuredProjects.length}개를 골랐습니다.
         </p>
         <div className={styles.list}>
           {featuredProjects.map((project) => (

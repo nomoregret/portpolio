@@ -13,8 +13,8 @@ export default function Hero() {
           있습니다.
         </h1>
         <p className={styles.lead}>
-          jQuery부터 React·TypeScript까지, 금융·제조·유통·공공 영역의 11개
-          기업에서 30여 개 프로젝트를 퍼블리싱했습니다. 최근에는 PL을 넘어
+          jQuery부터 React·TypeScript까지, 금융·통신·제조·유통·공공 영역의 6개
+          기업에서 33개 프로젝트를 퍼블리싱했습니다. 최근에는 PL을 넘어
           팀장으로서 여러 프로젝트를 동시에 이끌고 있습니다.
         </p>
         <div className={styles.meta}>
