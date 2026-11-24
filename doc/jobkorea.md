@@ -10,49 +10,53 @@
 웹퍼블리셔 / 퍼블리싱PL, 팀장
 
 - **조폐공사 쇼핑몰 구축** (2026.07 ~ 2026.12) — 퍼블리싱PL, 1명
-  - Next.js, React, TypeScript / Web(반응형), Admin
-  - 쇼핑몰 전 화면 및 관리자 화면 퍼블리싱 단독 수행, 웹접근성 준수
+    - Next.js, React, TypeScript / Web(반응형), Admin
+    - 쇼핑몰 전 화면 및 관리자 화면 퍼블리싱 단독 수행, 웹접근성 준수
 
 - **SKB 통합진단툴 2.0 ADAMS 구축** (2026.03 ~ 2026.07) — 퍼블리싱PL, 2명
-  - Next.js, React, TypeScript / Web(PC·Mobile)
-  - 내부 시스템 UI 퍼블리싱
+    - Next.js, React, TypeScript / Web(PC·Mobile)
+    - 내부 시스템 UI 퍼블리싱
 
 - **유플러스 AI 자동화 추천 구축** (2026.01 ~ 2026.02) — 퍼블리싱PL, 1명
-  - React / Web(PC)
-  - UI 퍼블리싱
+    - React / Web(PC)
+    - UI 퍼블리싱
 
 - **롯데월드 차세대 시스템 구축** (2024.09 ~ 2025.11) — 퍼블리싱PL, 5명
-  - React / Web(반응형)
-  - 퍼블리싱 코드 컨벤션 및 컴포넌트 구조 수립, 팀원 코드리뷰
-  - 일정·리소스 관리, 고객사와 화면 요건 협의
+    - React / Web(반응형)
+    - 퍼블리싱 코드 컨벤션 및 컴포넌트 구조 수립, 팀원 코드리뷰
+    - 일정·리소스 관리, 고객사와 화면 요건 협의
 
 - **동아홀딩스 · 동아쏘시오홀딩스 · 동아 수석문화재단 · 인바디 · 연세소식** (2024.03 ~ 2024.08) — 팀장, 4명
-  - HTML, SCSS, jQuery, Gulp / Web(반응형)
-  - 5개 프로젝트 동시 진행 — 일정 관리, 팀원 배분, 작업 지원, 타부서 커뮤니케이션 조율
+    - HTML, SCSS, jQuery, Gulp / Web(반응형)
+    - 5개 프로젝트 동시 진행 — 일정 관리, 팀원 배분, 작업 지원, 타부서 커뮤니케이션 조율
 
 - **전북은행 유니버셜 뱅킹 (쏙뱅크) 구축** (2023.09 ~ 2024.02) — 퍼블리싱PL, 3명
-  - HTML, SCSS, jQuery, React, Highcharts / Mobile Web, App
-  - UI 퍼블리싱, 웹접근성 인증마크 획득
+    - HTML, SCSS, jQuery, React, Highcharts / Mobile Web, App
+    - UI 퍼블리싱, 웹접근성 인증마크 획득
 
 - **삼성 상생협력포털 시스템 구축** (2023.07 ~ 2023.08) — 퍼블리싱PL, 2명
-  - Vue (Samsung Vue Library) / Web(PC·Mobile)
-  - UI 퍼블리싱
+    - Vue (Samsung Vue Library) / Web(PC·Mobile)
+    - UI 퍼블리싱
 
 - **포스코 플로우 구축** (2023.04 ~ 2023.06) — 퍼블리싱PL, 4명
-  - HTML, SCSS, jQuery, IBSheet8, Gulp / Web(PC)
-  - 내부 시스템 UI 퍼블리싱
+    - HTML, SCSS, jQuery, IBSheet8, Gulp / Web(PC)
+    - 내부 시스템 UI 퍼블리싱
 
 - **국민은행 빌드배포 자동화시스템 구축** (2022.10 ~ 2023.03) — 퍼블리싱PL, 5명
-  - React, TypeScript, SCSS, Ant Design / Web(PC)
-  - UI 퍼블리싱 (React 첫 실무 적용)
+    - React, TypeScript, SCSS, Ant Design / Web(PC)
+    - UI 퍼블리싱 (React 첫 실무 적용)
 
 - **캐논코리아 통합사이트 구축** (2022.03 ~ 2022.10) — 퍼블리싱PL, 4명
-  - HTML, SCSS, jQuery, Gulp / Web(PC·Mobile)
-  - UI 퍼블리싱
+    - HTML, SCSS, jQuery, Gulp / Web(PC·Mobile)
+    - UI 퍼블리싱
 
-- **하나손해보험 원데이 앱 고도화** (2021.11 ~ 2022.02) — 퍼블리싱PL, 3명
-  - HTML, CSS, jQuery, GSAP / Mobile Web, App
-  - UI 퍼블리싱
+- **프임아웃 홈페이지 리얼** (2022.01 ~ 2022.02) — 퍼블리싱PL, 1명
+    - HTML, CSS, jQuery, GSAP, Gulp / Web(Responsive)
+    - UI 퍼블리싱
+
+- **하나손해보험 원데이 앱 고도화** (2021.11 ~ 2022.01) — 퍼블리싱PL, 3명
+    - HTML, CSS, jQuery, GSAP / Mobile Web, App
+    - UI 퍼블리싱
 
 ---
 
@@ -61,8 +65,8 @@
 웹퍼블리셔 / 퍼블리셔PL
 
 - **SK T DIRECT SHOP 프론트 운영 및 고도화** (2018.09 ~ 2021.10) — 퍼블리셔PL, 2명
-  - HTML, CSS, jQuery / Web
-  - 3년간 UI 퍼블리싱 운영 및 고도화
+    - HTML, CSS, jQuery / Web
+    - 3년간 UI 퍼블리싱 운영 및 고도화
 
 ---
 
@@ -71,32 +75,32 @@
 웹퍼블리셔 / 퍼블리셔PL
 
 - **대한민국청소년의회 사이트 구축** (2017.10 ~ 2017.11) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **공동육아와 공동체교육 사이트 구축** (2017.10 ~ 2017.11) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **자폐행복센터 사이트 구축** (2017.09 ~ 2017.10) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **경기도 인권센터 사이트 구축** (2017.09 ~ 2017.10) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
 
 - **서대문 해벗누리 사이트 구축** (2017.08 ~ 2017.09) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
 
 - **장애인법 연구회 사이트 구축** (2017.08 ~ 2017.09) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
 
 - **한국타이어 나눔재단 사이트 구축** (2017.08 ~ 2017.09) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행, 웹접근성 인증마크 획득
 
 ---
 
@@ -105,32 +109,32 @@
 웹퍼블리셔 / 퍼블리셔PL
 
 - **메가존 펜타클 자사 사이트 구축** (2016.10 ~ 2016.11) — 퍼블리셔, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **돌체구스토 마이크로 사이트 구축** (2016.09 ~ 2016.10) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **킨더조이 마이크로 사이트 구축** (2016.07 ~ 2016.08) — 퍼블리셔, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **페레로쉐 프로모션 사이트 구축** (2016.04 ~ 2016.06) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **LG생활건강 프로모션 사이트 구축** (2016.01 ~ 2016.03) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **LG 유플러스 운영** (2015.10 ~ 2015.12) — 퍼블리셔, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 운영
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 운영
 
 - **유모비 프로모션 사이트 구축** (2015.08 ~ 2015.09) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 ---
 
@@ -139,28 +143,28 @@
 웹퍼블리셔 / 퍼블리셔PL
 
 - **YBM 잉글루탭 앱 구축** (2015.08 ~ 2015.09) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / App
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / App
+    - UI 퍼블리싱 단독 수행
 
 - **지학사 사이트 구축** (2015.06 ~ 2015.08) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **에듀넷 콘텐츠 사이트 구축** (2015.03 ~ 2015.05) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **YBM 저자직강 앱 구축** (2014.08 ~ 2014.10) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / App
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / App
+    - UI 퍼블리싱 단독 수행
 
 - **서울시 청소년 상담 복지센터 사이트 구축** (2014.04 ~ 2014.07) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / Web
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Web
+    - UI 퍼블리싱 단독 수행
 
 - **지학사 디지털 교과서 앱 구축** (2013.11 ~ 2014.03) — 퍼블리셔PL, 1명
-  - HTML, CSS, jQuery / App
-  - UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / App
+    - UI 퍼블리싱 단독 수행
 
 ---
 
@@ -169,5 +173,5 @@
 웹퍼블리셔
 
 - **팬택 모바일 매뉴얼 제작** (2013.08 ~ 2013.10) — UI 퍼블리싱, 1명
-  - HTML, CSS, jQuery / Mobile Web
-  - 모바일 매뉴얼 UI 퍼블리싱 단독 수행
+    - HTML, CSS, jQuery / Mobile Web
+    - 모바일 매뉴얼 UI 퍼블리싱 단독 수행
