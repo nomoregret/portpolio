@@ -33,11 +33,11 @@ work.md에서 확인 가능한 항목만 채웠습니다. 웹접근성 인증 / 
 ### 조폐공사 쇼핑몰 구축
 
 - 소속사 : 프레임아웃
-- 기간 : 2026.07 ~ 2026.11 (총 5개월)
+- 기간 : 2026.07 ~ 2026.12 (총 6개월)
 - 역할 : 퍼블리싱PL
 - 투입 인원 : 총 1명
 - 구현 범위 : web (responsive), admin
-- 사용 기술 : react, typescript
+- 사용 기술 : next.js, react, typescript
 - 웹접근성 인증 : 인증 마크 획득은 아님, 웹접근성 준수하여 개발
 - 사이트 URL : https://www.koreamint.com/
 - 담당 업무 :
@@ -55,7 +55,7 @@ work.md에서 확인 가능한 항목만 채웠습니다. 웹접근성 인증 / 
 - 역할 : 퍼블리싱PL
 - 투입 인원 : 총 2명
 - 구현 범위 : web (pc/mobile)
-- 사용 기술 : react, typescript
+- 사용 기술 : next.js, react, typescript
 - 웹접근성 인증 : 해당 없음
 - 사이트 URL : 비공개 (내부 시스템)
 - 담당 업무 :
