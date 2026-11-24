@@ -36,6 +36,17 @@
         flex: 1;
         height: 1px;
         background: var(--color-border);
+        transform-origin: left center;
+
+        // 연도 그룹이 화면에 들어오면 구분선이 왼쪽에서부터 그려진다
+        :global(.has-scroll-motion) & {
+            transform: scaleX(0);
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        :global(.has-scroll-motion) .group:global(.is-inview) & {
+            transform: scaleX(1);
+        }
     }
 }
 

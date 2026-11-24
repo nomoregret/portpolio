@@ -5,14 +5,21 @@ export default function FeaturedProjects() {
   return (
     <section id="projects" className={styles.section}>
       <div className={styles.inner}>
-        <h2 className={styles.heading}>대표 프로젝트</h2>
-        <p className={styles.subheading}>
+        <div data-scroll data-reveal>
+          <h2 className={styles.heading}>대표 프로젝트</h2>
+          <p className={styles.subheading}>
           {timeline.length}개 프로젝트 중 역할과 맥락이 잘 드러나는{" "}
           {featuredProjects.length}개를 골랐습니다.
-        </p>
+          </p>
+        </div>
         <div className={styles.list}>
           {featuredProjects.map((project) => (
-            <article key={project.id} className={styles.card}>
+            <article
+              key={project.id}
+              className={styles.card}
+              data-scroll
+              data-reveal
+            >
               <div className={styles.card__head}>
                 <h3 className={styles.card__title}>{project.title}</h3>
                 <span className={styles.card__period}>{project.period}</span>

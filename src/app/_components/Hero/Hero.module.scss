@@ -10,6 +10,14 @@
     }
 }
 
+// 글로우 패럴랙스 레이어 — Locomotive가 transform을 직접 쓰므로 글로우와 분리
+.glowLayer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
 // Linear풍 앰비언트 글로우 — accent 톤 블러, 장식용이라 콘텐츠보다 뒤에, 인터랙션 대상 아님
 .glow {
     position: absolute;

@@ -26,7 +26,7 @@ export const featuredProjects: FeaturedProject[] = [
     role: "퍼블리싱PL",
     teamSize: "총 1명",
     scope: "web (responsive), admin",
-    tech: ["react", "typescript"],
+    tech: ["next.js", "react", "typescript"],
     accessibility: "웹접근성 준수 개발 (인증 마크 획득은 아님)",
     url: "https://www.koreamint.com/",
     duties: ["쇼핑몰 퍼블리싱 전 화면 직접 구현 (단독 작업)", "admin(관리자) 화면 퍼블리싱"],
@@ -90,7 +90,7 @@ export const timeline: TimelineProject[] = [
     title: "조폐공사 쇼핑몰 구축",
     period: "2026.07 ~ 2026.11",
     role: "퍼블리싱PL",
-    tech: ["react", "typescript"],
+    tech: ["next.js", "react", "typescript"],
     url: "https://www.koreamint.com/",
   },
   {
@@ -99,7 +99,7 @@ export const timeline: TimelineProject[] = [
     title: "SKB 통합진단툴 2.0 ADAMS 구축",
     period: "2026.03 ~ 2026.07",
     role: "퍼블리싱PL",
-    tech: ["react", "typescript"],
+    tech: ["next.js", "react", "typescript"],
   },
   {
     id: "uplus-ai",

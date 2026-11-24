@@ -26,17 +26,27 @@ export default function CareerTimeline() {
   return (
     <section id="career" className={styles.section}>
       <div className={styles.inner}>
-        <h2 className={styles.heading}>전체 경력</h2>
-        <p className={styles.subheading}>
+        <div data-scroll data-reveal>
+          <h2 className={styles.heading}>전체 경력</h2>
+          <p className={styles.subheading}>
           {startYear}년부터 지금까지, {companyCount}개 회사에서 진행한{" "}
           {timeline.length}개 프로젝트입니다.
-        </p>
+          </p>
+        </div>
 
         {groups.map((group) => (
-          <div key={group.year} className={styles.group}>
+          <div key={group.year} className={styles.group} data-scroll>
             <p className={styles.group__year}>{group.year}</p>
-            {group.items.map((project) => (
-              <div key={project.id} className={styles.row}>
+            {group.items.map((project, index) => (
+              <div
+                key={project.id}
+                className={styles.row}
+                data-scroll
+                data-reveal="left"
+                style={
+                  { "--reveal-delay": `${index * 0.06}s` } as React.CSSProperties
+                }
+              >
                 <div className={styles.row__main}>
                   <p className={styles.row__title}>{project.title}</p>
                   <p className={styles.row__sub}>

@@ -25,6 +25,7 @@ const SKILLS = [
   "JavaScript",
   "jQuery",
   "React",
+  "Next.js",
   "TypeScript",
   "Vue",
   "Ant Design",
@@ -34,20 +35,32 @@ const SKILLS = [
   "웹접근성 (WCAG / KWCAG)",
 ];
 
+function revealDelay(index: number) {
+  return { "--reveal-delay": `${index * 0.08}s` } as React.CSSProperties;
+}
+
 export default function About() {
   return (
     <section id="about" className={styles.section}>
       <div className={styles.inner}>
-        <h2 className={styles.heading}>핵심 역량</h2>
+        <h2 className={styles.heading} data-scroll data-reveal>
+          핵심 역량
+        </h2>
         <div className={styles.grid}>
-          {STRENGTHS.map((item) => (
-            <div key={item.title} className={styles.card}>
+          {STRENGTHS.map((item, index) => (
+            <div
+              key={item.title}
+              className={styles.card}
+              data-scroll
+              data-reveal
+              style={revealDelay(index)}
+            >
               <p className={styles.card__title}>{item.title}</p>
               <p className={styles.card__desc}>{item.desc}</p>
             </div>
           ))}
         </div>
-        <div className={styles.skills}>
+        <div className={styles.skills} data-scroll data-reveal>
           <p className={styles.skills__label}>기술 스택</p>
           <ul className={styles.skills__list}>
             {SKILLS.map((skill) => (

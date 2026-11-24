@@ -3,8 +3,15 @@ import styles from "./Hero.module.scss";
 export default function Hero() {
   return (
     <section id="top" className={styles.hero}>
-      <div className={styles.glow} aria-hidden="true" />
-      <div className={styles.inner}>
+      <div
+        className={styles.glowLayer}
+        aria-hidden="true"
+        data-scroll
+        data-scroll-speed="-0.5"
+      >
+        <div className={styles.glow} />
+      </div>
+      <div className={styles.inner} data-scroll data-scroll-speed="-0.25">
         <p className={styles.eyebrow}>퍼블리싱 PL · 13년차</p>
         <h1 className={styles.title}>
           쇼핑몰부터 은행 시스템까지,

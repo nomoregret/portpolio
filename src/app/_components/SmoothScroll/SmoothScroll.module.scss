@@ -1,0 +1,18 @@
+// 상단 스크롤 진행 바 — 스크롤 모션이 켜졌을 때만 노출
+.progress {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 2px;
+    background: var(--color-primary);
+    transform: scaleX(var(--scroll-progress, 0));
+    transform-origin: left center;
+    pointer-events: none;
+
+    :global(.has-scroll-motion) & {
+        display: block;
+    }
+}
